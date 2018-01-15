@@ -137,7 +137,7 @@ height: 100%;
 }
 
 .contact_top ul li p {
-font-size: 25px;
+font-size: 21px;
 font-weight: 900;
 
 }
@@ -617,7 +617,54 @@ font-size: 25px;
 }
 
 /*==========Карусель END ==========*/
+/*==========КНОПКА ВВЕРХ ==========*/
 
+.to_top {
+    background-color: transparent;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: calc((100% - 1200px)/2.5);
+    height: 100%;
+
+  cursor: pointer;
+
+}
+
+.to_top_gray {
+  background-color: transparent;
+  width: 65px;
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top:0px;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.to_top:hover .to_top_gray{
+    background-color: rgba(198, 198, 198, 0.2);
+}
+
+
+
+
+.to_top p{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 30px;
+  opacity: 0.2
+}
+
+.to_top:hover p{
+
+  opacity: 0.5
+}
+
+/*==========КНОПКА ВВЕРХ конец==========*/
 
 /*всплывающая форма обратной связи начало*/
 .mfp-close{
