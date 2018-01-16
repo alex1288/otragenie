@@ -457,7 +457,7 @@ content: "";
     width: 400px;
     position: absolute;
     bottom: -23px;
-    right: -8px;
+    right: 520px;
     height: 50px;
     background-color: #fef0e2;
     z-index: -1;
@@ -465,12 +465,17 @@ content: "";
 }
 
 .question {
-    width: 545px;
+  background-image: url(img/sofit2.png);
+  background-repeat: no-repeat;
+ background-position: 100%;
+   // width: 545px;
     margin: auto;
     display: block;
     margin-top: 25px;
     font-size: 25px;
-    background: transparent;
+   // background: transparent;
+    -webkit-background-size: 400px;
+    background-size: 400px;
 }
 
 .question p{
@@ -479,7 +484,9 @@ content: "";
   font-weight: 900;
 
 }
-
+.question .buttom_form_box input {
+    width: 550px;
+  }
 .buttom_form_box {
 
 }
