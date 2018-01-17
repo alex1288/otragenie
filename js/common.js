@@ -151,14 +151,15 @@ $(document).ready(function() {
 
 	$(".owl-carousel").owlCarousel({
 		loop:true,
-		items: 3,
+		items: 1,
 		//margin:130,
 		//autoplay:true,
 	    autoplayTimeout:6000,
 	    autoplayHoverPause:true,
 		//stagePadding: 30,
 		dots: true,
-		nav: true,
+		
+		nav: false,
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		navContainer: '#customNav',
 		responsive: {
@@ -170,9 +171,12 @@ $(document).ready(function() {
 	    },
 	    // > 768
 	    768 : {
+	    	items: 3,
 	    	margin:30,
 	    	stagePadding: 10,
         dots: true,
+        nav: true,
+
 	    }
 		}
 	});
@@ -221,7 +225,7 @@ $(document).ready(function() {
 
 	$(".owl-carousel3").owlCarousel({
 		loop: true,
-		items: 3,
+		items: 1,
 		//margin:130,
 		//autoplay:true,
 	    autoplayTimeout:6000,

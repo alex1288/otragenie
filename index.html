@@ -57,13 +57,13 @@
 							<div class="contact_top">
 						<div class="container">
 
-							<div class="col-md-12 col-xs-12">
+							<div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
 								<div class="row">
 									
 								
 
 										
-									<nav id="menu">
+									<nav id="menu" class="hidden-xs">
 										<ul>
 											<li>
 												<p><a href="/">Главная</a></p>
@@ -82,10 +82,37 @@
 											</li>
 											<li>
 												<p><a href="tel:+74822646604">+7 (4822) 646-604</a></p>
-												<sapn style="margin-top:0px; position: absolute; right: 15px; bottom:11px;font-size: 21px;"><a style="" href="#form2" class="popap">Заказать звонок</a></sapn>
+												<span style=""><a href="#form" class="popap">Заказать звонок</a></span>
 											</li>
 										</ul>
 										</nav>
+
+								
+
+						
+						<div id="mySidenav" class="sidenav float_l col-xs-3">
+
+							<nav id="menu3">
+
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<a href="#apartment" onclick="closeNav()">Цены и планировки</a>
+							<a href="#place" onclick="closeNav()">Расположение</a>
+							<a href="#advantages" onclick="closeNav()">Преимущества</a>
+							<a href="#photo" onclick="closeNav()">Фото</a>
+							<a href="#order" onclick="closeNav()">Оформление квартиры</a>
+							<a href="#ipoteka" onclick="closeNav()">Расчитать ипотеку</a>
+							<a href="#down_line" onclick="closeNav()">Контакты</a>
+							
+							</nav>
+
+						</div>
+						<span class="m-nav" onclick="openNav()">&#9776; </span>
+						
+
+				
+
+
+
 
 
 										<div class="sociate_top">
@@ -119,16 +146,16 @@
 						<div class="main_txt_l ">
 							<h1>Натяжные потолки</h1>
 							<p>Закажите бесплатный замер, и мы сообщим вам итоговую стоимость уже сегодня</p>
-							
+							<a href="#form" style="    position: absolute;    bottom: 0;" class="hidden-lg hidden-md hidden-sm popap" >Заказать звонок</a>
 							
 						</div>
 
 
 
 
-	<div class="main_txt_r">
+	<div class="main_txt_r hidden-xs">
 <div class="buttom_form_box">
-								<form  id="form" style="padding-bottom: 35px;">
+								<form  id="form2" style="padding-bottom: 35px;">
 									<p>До 100 км от Твери выезд замерщика бесплатно</p>
 									<input  type="text" name="name" placeholder="Иванов Иван" required>
 									<input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
@@ -378,9 +405,7 @@ document.getElementById("defaultOpen").click();
 		<div class="col-md-12">
 			<div class="row">
 				<h2>Виды светильников</h2>
-				<p></p>
-
-				<div class="block-one-example">
+					<div class="block-one-example">
 					<div id="customNav3" class="owl-my-nav"></div>
 					<div class="owl-carousel3 block-items">
 						
@@ -526,10 +551,10 @@ document.getElementById("defaultOpen").click();
 					<div class="owl-carousel2 block-items">
 						<div class="item">
 							<div class="inner-testimonial">
-								<div class="col-lg-3">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 									<img src="img/review/1.jpg" alt="">
 								</div>
-								<div class="col-lg-9">
+								<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 									<h3 class="city-name"><a target="_blank" href="https://vk.com/topic-122323620_34212426?post=22">Елена Новикова <i class="fa fa-vk" aria-hidden="true"></i></a></h3>
 									<p class="text-testimonial">Ребята пришли полностью со своим инструментом, в оговоренное время (поверьте, это важно, и далеко не все мастера соблюдают эти, вроде бы, очевидные вещи) Все сделали быстро и четко. Все красиво и аккуратно. Спасибо!</p></div>
 								</div>
@@ -537,10 +562,10 @@ document.getElementById("defaultOpen").click();
 
 						<div class="item">
 							<div class="inner-testimonial">
-								<div class="col-lg-3">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ">
 									<img src="img/review/2.jpg" alt="">
 								</div>
-								<div class="col-lg-9">
+								<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 									<h3 class="city-name"><a target="_blank" href="https://vk.com/topic-122323620_34212426?post=21">Светлана Старцева <i class="fa fa-vk" aria-hidden="true"></i></a></h3>
 									<p class="text-testimonial">Большое спасибо, мы очень довольны, будем продолжать с вами сотрудничать! У нас еще много работы для вас!</p></div>
 								</div>
@@ -548,10 +573,10 @@ document.getElementById("defaultOpen").click();
 
 							<div class="item">
 							<div class="inner-testimonial">
-								<div class="col-lg-3">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
 									<img src="img/review/3.jpg" alt="">
 								</div>
-								<div class="col-lg-9">
+								<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 									<h3 class="city-name"><a target="_blank" href="https://vk.com/topic-122323620_34212426?post=11">Юля Сурядова <i class="fa fa-vk" aria-hidden="true"></i></a></h3>
 									<p class="text-testimonial">Большое спасибо, сделали мне красивейший глянцевый потолок! Гляжу и не могу насмотреться, я очень довольна! В планах ванная и комната, буду просить наводить мне такую же красоту</p></div>
 								</div>
@@ -593,7 +618,7 @@ document.getElementById("defaultOpen").click();
  					<h2>Остались вопросы</h2>
  					<p>Оставьте заявку и мы вам перезвоним</p>
  					<div class="buttom_form_box">
- 						<form  id="form" style="padding-bottom: 35px;">
+ 						<form  id="form3" style="padding-bottom: 35px;">
  							<input style="margin-top: 38px;" type="text" name="name" placeholder="Иванов Иван" required>
  							<input type="text" id="phone2" name="phone" placeholder="+7 (___) ___-__-__" required>
  							<button class="but_order" style="height: 53px; ">Отправить</button>
@@ -648,7 +673,19 @@ document.getElementById("defaultOpen").click();
 	<footer class="down-line">	
 	
 	</footer>
+<div class="hidden popUpform">
 
+	<form  id="form">
+		<h2 style="font-weight: bold;">Оставить заявку</h2>
+		<p>позвонить по телефону <b>+7 (920) 154-31-54 </b></p>
+		<p>или заказать обратный звонок: <br>	
+
+
+			<input style="margin-top: 20px;" type="text" name="name" placeholder="Иванов Иван" required>
+			<input type="text" id="phone2" name="phone" placeholder="+7 (___) ___-__-__" required>
+			<button class="but_order" style="height: 53px;">Отправить</button>
+		</form>
+	</div>
 	<div class="to_top" id="top">
 		<div class="to_top_gray">
 			<p ><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
