@@ -605,7 +605,7 @@ font-size: 40px;
 }
 .contact p a{
 color: #fff;
-    text-shadow: 1px 1px 25px #666;
+    text-shadow: 1px 1px 15px #666;
     font-size: 30px;
     font-weight: 900;
       -webkit-transition: all 0.3s ease-in-out 0s;
