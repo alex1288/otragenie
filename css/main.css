@@ -622,6 +622,12 @@ color: #fff;
  // top: 200px;
 }
 
+.block-one-example h3 i{
+  font-size: 21px;
+  right: -15px;
+  position: relative;
+}
+
 .inner-testimonial {
   text-align: left;
   background-color: transparent;
