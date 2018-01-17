@@ -167,7 +167,7 @@ margin-top:0px; position: absolute; right: 15px; bottom:11px;font-size: 21px;
 }
 .sociate_top {
   position: absolute;
-      z-index: 1000;
+      z-index: 999;
     right: 15px;
 }
 .sociate_top p{
@@ -950,7 +950,60 @@ button.but_order:hover {
 .social a{
 color: #fff;
 }
+/*мобильное меню*/
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.float_l span{
+font-size: 35px
+
+}
+.float_r{
+
+}
+
+
+/*мобильное меню конец*/
                       /*Мобильная версия*/
 
 /*==========  Desktop First Method  ==========*/
@@ -1045,12 +1098,24 @@ div.tab{margin-top: 0;}
 .sociate_top p{}
 .main_txt_l {       margin-top: 15%;}
 .sociate_top a {    font-size: 27px;}
-
+.sociate_top {    right: 0px;    top: 55px;}
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+.contact p a {font-size: 20px;}
+div.tab button {    width: 48%;}
+div.tab button {    font-size: 14px;}
+.main_txt_l h1 {
+    font-size: 44px;
+    line-height: 42px;
+}
+.sociate_top {
+    right: 0px;
+    top: 50px;
+}
+
 
 }
 

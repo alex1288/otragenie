@@ -88,27 +88,33 @@
 										</nav>
 
 								
+										<div class="float_l hidden-lg hidden-md col-sm-2 col-xs-3"> 
+<div id="mySidenavtest" class="sidenav "></div>
+											<div id="mySidenav" class="sidenav ">
 
-						
-						<div id="mySidenav" class="sidenav float_l col-xs-3">
+												<nav id="menu3">
 
-							<nav id="menu3">
+													<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+													<a href="#apartment" onclick="closeNav()">Цены и планировки</a>
+													<a href="#place" onclick="closeNav()">Расположение</a>
+													<a href="#advantages" onclick="closeNav()">Преимущества</a>
+													<a href="#photo" onclick="closeNav()">Фото</a>
+													<a href="#order" onclick="closeNav()">Оформление квартиры</a>
+													<a href="#ipoteka" onclick="closeNav()">Расчитать ипотеку</a>
+													<a href="#down_line" onclick="closeNav()">Контакты</a>
 
-							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-							<a href="#apartment" onclick="closeNav()">Цены и планировки</a>
-							<a href="#place" onclick="closeNav()">Расположение</a>
-							<a href="#advantages" onclick="closeNav()">Преимущества</a>
-							<a href="#photo" onclick="closeNav()">Фото</a>
-							<a href="#order" onclick="closeNav()">Оформление квартиры</a>
-							<a href="#ipoteka" onclick="closeNav()">Расчитать ипотеку</a>
-							<a href="#down_line" onclick="closeNav()">Контакты</a>
-							
-							</nav>
+												</nav>
 
-						</div>
-						<span class="m-nav" onclick="openNav()">&#9776; </span>
-						
+											</div>
+											<span class="m-nav" onclick="openNav()">&#9776; </span>
 
+										</div>
+										<div style="float: right; text-align: right;" class="float_r hidden-lg hidden-md col-sm-2 col-xs-3"> 
+										<a class="hidden-lg hidden-md" href="tel:+74822641011">
+									 <i style="font-size: 35px;    line-height: 50px; color: #666;" class="fa fa-phone " aria-hidden="true"> </i>
+									 </div>
+									
+									</a>
 				
 
 
@@ -181,7 +187,7 @@
 			<li>
 				<img src="" alt="">
 				<h3>До 100 км</h3>
-				<p>Наши мастера выезжают на замер и монтаж потолка бесплаТно до 100 км от Твери</p>
+				<p>Наши мастера выезжают на замер и монтаж потолка бесплатно до 100 км от Твери</p>
 			</li>
 			<li>
 				<img src="" alt="">
@@ -686,12 +692,29 @@ document.getElementById("defaultOpen").click();
 			<button class="but_order" style="height: 53px;">Отправить</button>
 		</form>
 	</div>
-	<div class="to_top" id="top">
+	<div class="to_top hidden-xs" id="top">
 		<div class="to_top_gray">
 			<p ><i class="fa fa-chevron-up" aria-hidden="true"></i></p>
 		</div>
 	</div>
+	<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
 
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+</script>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
