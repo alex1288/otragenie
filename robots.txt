@@ -3,5 +3,5 @@ Disallow:
 
 User-agent: Yandex
 Disallow:
-Host: best-one.ru/
-Sitemap:  best-one.ru/sitemap.xml
+Host: xn--69-6kcuaep3bfuv.xn--p1ai/
+Sitemap:  xn--69-6kcuaep3bfuv.xn--p1ai/sitemap.xml
